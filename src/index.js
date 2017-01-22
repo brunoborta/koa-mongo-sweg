@@ -1,9 +1,11 @@
 import Koa from 'koa';
-import mongo from 'koa-mongo';
+import config from './config';
+import Twit from 'twit';
 const app = new Koa();
 
-app.use(ctx =>{
-	ctx.body= 'Just a Hello World app';
+
+app.use(ctx => {
+	ctx.body = 'Hello World!';
 });
 
 app.listen(3000, () => {
