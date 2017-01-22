@@ -1,4 +1,4 @@
-# Study using koa 2, mongo and ES6.
+# Study using Twitter API, koa 2, mongo and ES6.
 
 currently in development...
 
