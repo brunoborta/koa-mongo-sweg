@@ -25,7 +25,7 @@ let dataTweet = '';
 */
 
 // Just find this on ww trends
-TweetClient.get('search/tweets', { q: 'the Packers', count: 25 }, function(err, data, response) {
+TweetClient.get('search/tweets', { q: 'the Packers', count: 5 }, function(err, data, response) {
 	if(err) {
 		console.log('An Error ocurred: ' + err.message);
 	} else {
@@ -34,7 +34,7 @@ TweetClient.get('search/tweets', { q: 'the Packers', count: 25 }, function(err, 
   dataTweet = data;
 });
 
-app.use(async ctx => {
+app.use(ctx => {
 	ctx.body = JSON.stringify(dataTweet, null, 2);
 });
 

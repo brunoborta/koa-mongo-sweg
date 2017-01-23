@@ -1,3 +1,4 @@
 dist
 src/config.js
-.gitignore
+.DS_Store
+npm-debug.log
